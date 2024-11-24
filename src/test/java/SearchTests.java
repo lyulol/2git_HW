@@ -11,8 +11,8 @@ public class SearchTests {
         open("https://www.google.com/");
         WebDriverRunner.getWebDriver().manage().addCookie(new Cookie("SOCS", "CAESHAgBEhJnd3NfMjAyNDExMTQtMF9SQzEaAmVuIAEaBgiAqu"));
         refresh();
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://selenide.org"));
+        $("[name=q]").setValue("yandex").pressEnter();
+        $("[id=search]").shouldHave(text("yandex.com"));
     }
 
 }
